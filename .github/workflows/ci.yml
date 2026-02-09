@@ -14,3 +14,5 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t antibody-graph:ci .
+# CI: validate code + build container
+# CD would push image to a registry or deploy to cloud
