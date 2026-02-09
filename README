@@ -1,0 +1,23 @@
+# Bispecific Antibodies – Reproducible Graph Pipeline
+
+This repository demonstrates a **research-to-production workflow** for transforming
+antibody–antigen structural data into graph representations, following
+**CI/CD, Docker, and GitOps principles**.
+
+The goal is to keep exploratory research flexible (Jupyter notebooks)
+while ensuring **reproducible, automated execution** suitable for deployment
+on cloud platforms.
+
+---
+
+## Repository Structure
+
+```text
+.
+├── notebooks
+│   └── 1_Antibody_Antigen_Structure_to_Graph.ipynb   # Exploratory research
+├── src
+│   └── build_antibody_antigen_graph.py               # Deterministic entry point
+├── requirements.txt                                  # Explicit dependencies
+├── Dockerfile                                        # Containerized execution
+└── .github/workflows/ci.yml                          # CI pipeline
